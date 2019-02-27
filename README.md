@@ -169,9 +169,9 @@ push, using `git push` will suffice.
 ## Conclusion
 
 Being able to add Git remotes allows you to back up your local repository to a
-remote server. If you remember `git init`, `git remote add origin your-remote-
-repository-URL`, add, and push your changes, you'll be able to get your project
-up to GitHub in minutes!
+remote server. If you remember `git init`, 
+`git remote add origin your-remote-repository-URL`, add, and push your changes, 
+you'll be able to get your project up to GitHub in minutes!
 
 ## Resources
 
