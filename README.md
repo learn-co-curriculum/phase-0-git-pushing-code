@@ -75,7 +75,7 @@ README.md`. If you've got the README file open, the new text will appear!
 repository. In your terminal, type `git init`. Your terminal should show that an
 'empty Git repository' has been initialized.
 
-7. Type `git add .` to stage the new `README.md` file so it will be tracked by
+7. Type `git add README.md` to stage the new `README.md` file so it will be tracked by
 `git`.
 
 8. Now, type `git commit -m 'initialize git'`. This will create the first commit
@@ -87,8 +87,7 @@ repository we created earlier.
 1. Create a new directory and add a file. You can run this series of commands:
 
     * Change into your `code` directory: `cd ~/code`
-      - If your development directory is named something other than `~/code`, that's
-      fine — `cd` into whatever yours is called.
+      * If your development directory is named something other than `~/code`, that's fine, `cd` into whatever yours is called.
     * Create a new directory named `my_new_directory`: `mkdir my_new_directory`
     * Change into the newly-created directory: `cd my_new_directory`
     * Create a new file named `README.md`: `touch README.md`
@@ -98,7 +97,7 @@ repository we created earlier.
 repository, so in your terminal, type `git init`. Your terminal should show that
 an 'empty Git repository' has been initialized.
 
-3. Type `git add .` to stage the new `README.md` file so it will be tracked by Git.
+3. Type `git add README.md` to stage the new `README.md` file so it will be tracked by Git.
 
 4. Now, type `git commit -m 'initialize git'`. This will create the first commit
 for this local repository, which will allow us to push our work to the remote we
@@ -107,7 +106,7 @@ created earlier.
 ## Set the Destination of a Repo with `git remote`
 
 To connect your local repository to the newly created GitHub repository, you
-must add a new remote. Adding a remote involves giving `git` a "short name" and
+must add a new remote to a remote name. Adding a remote involves giving `git` a "short name" and
 a "repository path." You copied the repository path from GitHub a few steps
 above.
 
@@ -122,11 +121,7 @@ following into the terminal:
 
 `git remote add origin <your-copied-remote-repository-URL>`.
 
-This sets the remote, so you can now push code.
-
-> **ADVANCED NOTE**: It's possible to set multiple remotes. You could push to
-> GitHub (short name `origin`), or a private company server (short name
-> `paycheck`), or a Raspberry Pi in the living room (short name `hackMaster`).
+This sets the remote, so you can now ***push*** code.
 
 You can use `git remote -v` to view the remote(s).
 
@@ -148,23 +143,22 @@ The `git push` command takes two arguments. The first is the name of the remote
 repo. Remember, `origin` is just an alias or "short name" that refers to the
 repository name. You don't actually have to enter the repository name. Instead,
 you can just use `origin`. The second is the name of the remote branch you want
-to send code to. In the example below, we're pushing to our remote repository,
-referred to as `origin`.
+to send code to. In the example below, we're pushing to our remote repository's
+_default_ branch, `master`. We're still going to hold off on discussing branching
+until later, but it's important to remember that `master` is a special branch, it's
+the default name.
 
 ```bash
-git push origin master
+git push -u origin master
 ```
-
-> **ADVANCED NOTE**: If you have multiple remotes, you can push to multiple
-> remotes.  
-> $ git push origin master  
-> $ git push paycheck master  
-> $ git push hackMaster master  
 
 This will push your code up to the remote repo/branch. The first time you push
 code up to a newly-added remote repository, use the `-u` flag to tell Git to
-"save" the remote repositiory: `git push -u origin master`. For every subsequent
-push, using `git push` will suffice.
+"save" the remote repositiory as the default push destination:
+
+`git push -u origin master`.
+
+For every subsequent push, you only need to enter `git push`/
 
 ## Conclusion
 
