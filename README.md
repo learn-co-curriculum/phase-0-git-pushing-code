@@ -9,20 +9,21 @@
 
 ## Introduction
 
-You may have heard of [GitHub](https://github.com) before. Many coders use it as
-a place to keep and share their code. However, GitHub does nothing special in
-the Git universe. It's just another Git repository, like what you create when
-you run `git init`. The only different thing is that GitHub lives on a server
-across the internet.
+You may have heard of [GitHub](https://github.com) before. In the previous 
+lesson, you used it to get Facebook's code for the React framework. For all
+the amazing power that GitHub provides (Microsoft thought it was so powerful
+that they bought GitHub for a cool $7.5 billion), as far as Git is concerned
+they're just a big old server that hosts a whole bunch of remote respositories
+("remotes").
 
-A repository that's non-local is called a _remote_. You've seen how valuable
+You've seen how valuable
 _remotes_ are for _getting_ software. Now we can take a look at the other side
-of the equation: how to mirror our _local_ repository to a _remote_ repository
+of the transaction: how we mirror our _local_ repository to a _remote_ repository
 using `git push` and `git remote`.
 
 Once your code is on a _remote_, it's backed up &mdash; which is always a good
-thing &mdash; and it's available for _someone else_ to `fork` or `clone` and
-benefit from. Let's learn how to `push` our code!
+thing &mdash; Also, once you push to a remote you can choose whether to let
+others `fork` or `clone` and benefit from it. Let's learn how to `push` our code!
 
 ## Create a Remote Repository on GitHub
 
@@ -123,7 +124,7 @@ following into the terminal:
 
 This sets the remote, so you can now ***push*** code.
 
-You can use `git remote -v` to view the remote(s).
+You can use `git remote -v` (the `v` is for "verbose") to view the remote(s).
 
 ```bash
 git remote -v
@@ -158,7 +159,7 @@ code up to a newly-added remote repository, use the `-u` flag to tell Git to
 
 `git push -u origin master`.
 
-For every subsequent push, you only need to enter `git push`/
+For every subsequent push, you only need to enter `git push`
 
 ## Conclusion
 
