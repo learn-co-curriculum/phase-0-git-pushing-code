@@ -13,7 +13,7 @@ You may have heard of [GitHub](https://github.com) before. In the previous
 lesson, you used it to get Facebook's code for the React framework. For all
 the amazing power that GitHub provides (Microsoft thought it was so powerful
 that they bought GitHub for a cool $7.5 billion), as far as Git is concerned
-they're just a big old server that hosts a whole bunch of remote respositories
+they're just a big old server that hosts a whole bunch of remote repositories
 ("remotes").
 
 You've seen how valuable
@@ -155,7 +155,7 @@ git push -u origin master
 
 This will push your code up to the remote repo/branch. The first time you push
 code up to a newly-added remote repository, use the `-u` flag to tell Git to
-"save" the remote repositiory as the default push destination:
+"save" the remote repository as the default push destination:
 
 `git push -u origin master`.
 
