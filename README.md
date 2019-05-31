@@ -13,7 +13,7 @@ You may have heard of [GitHub](https://github.com) before. In the previous
 lesson, you used it to get Facebook's code for the React framework. For all
 the amazing power that GitHub provides (Microsoft thought it was so powerful
 that they bought GitHub for a cool $7.5 billion), as far as Git is concerned
-they're just a big old server that hosts a whole bunch of remote respositories
+they're just a big old server that hosts a whole bunch of remote repositories
 ("remotes").
 
 You've seen how valuable
