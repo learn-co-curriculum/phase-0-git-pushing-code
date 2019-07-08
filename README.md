@@ -135,7 +135,7 @@ git remote -v
 
 ## Send Code to the Remote Repo with `git push`
 
-Now that we have added a remote repo, we need to send our latest work the
+Now that we have added a remote repo, we need to send our latest work to the
 remote. We use this command when we want to send some code from the local
 repository to the associated remote repository. Git will push all the local,
 committed work to the remote repository.
