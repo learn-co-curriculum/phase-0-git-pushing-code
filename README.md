@@ -114,8 +114,8 @@ above.
 The repository path is a long bunch of technical words. The creators of Git
 thought it would be easier to type a "nickname" or a "short name" that points to
 that long "repository path." It's common to have a "default" remote. The default
-remote short name is called `master`. So we're going to create a new remote with
-short name of `master`.
+remote short name is called `origin`. So we're going to create a new remote with
+short name of `origin`.
 
 Make sure you've still got your remote Git info copied from GitHub, and type the
 following into the terminal:
