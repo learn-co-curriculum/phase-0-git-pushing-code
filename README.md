@@ -37,8 +37,9 @@ initialize the new repository with a README or add a `.gitignore` or license.
 Click the green `Create repository` button.
 
 3. After you create the _remote_ repository, you should see a "Quick setup"
-page. Click the "Copy to clipboard" symbol next to the repo URL (pictured) to
-copy the URL. (We'll use this in the next section.)
+page. Make sure the `SSH` option is selected, then click the "Copy to clipboard" 
+symbol next to the repo URL (pictured) to copy the URL. (We'll use this in the 
+next section.)
 
 ![github repo quick setup](https://curriculum-content.s3.amazonaws.com/web-development/enough-git-for-learn-co/github_quick_setup.png)
 
@@ -129,8 +130,8 @@ You can use `git remote -v` (the `v` is for "verbose") to view the remote(s).
 ```bash
 git remote -v
 # View existing remotes
-# origin  https://github.com/OWNER/REPOSITORY.git (fetch)
-# origin  https://github.com/OWNER/REPOSITORY.git (push)
+# origin  git@github.com:OWNER/REPOSITORY.git (fetch)
+# origin  git@github.com:OWNER/REPOSITORY.git (push)
 ```
 
 ## Send Code to the Remote Repo with `git push`
