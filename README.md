@@ -32,7 +32,13 @@ There are a few steps to follow to create a _remote_ repository on GitHub.
 1. Go to: [github.com/new](https://github.com/new), while logged into GitHub.
 
 2. Enter a name for your repository in the `Repository name` field. You can name
-it whatever you'd like; be creative! The default options are fine as-is — don't
+it whatever you'd like, but here are a few guidelines that we follow that are
+commonly followed:
+  * Choose a name that's obvious `project-raccoon` is less helpful than 
+    `multi-server-file-search`
+  * As seen in the previous bullet, separation of multiple words happens with
+    `-` versus `.` or `_`
+The default options are fine as-is — don't
 initialize the new repository with a README or add a `.gitignore` or license.
 Click the green `Create repository` button.
 
