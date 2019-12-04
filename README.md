@@ -86,13 +86,21 @@ repository we created earlier.
 
 ### For the Standalone Learn IDE
 
-1. We want to create a new directory and add a file so our first step is to change into our `code` directory by typing `cd ~/code` into the terminal. (If your development directory is named something other than `~/code`, that's fine, `cd` into whatever yours is called.) Our terminal should display `code` (or whatever you decided to name your development directory), indicating that you are now inside of our development directory.
+1. We want to create a new directory and add a file so our first step is to change 
+into our `code` directory by typing `cd ~/code` into the terminal. (If your development 
+directory is named something other than `~/code`, that's fine, `cd` into whatever yours 
+is called.) Our terminal should display `code` (or whatever you decided to name your 
+development directory), indicating that you are now inside of our development directory.
 
-2. Next, create a new directory named `my_new_directory` by entering `mkdir my_new_directory` in the terminal.
+2. Next, create a new directory named `my_new_directory` by entering `mkdir my_new_directory`
+in the terminal.
 
-3. We're going to move from development directory into the newly-created directory by typing `cd my_new_directory`. Our terminal should display `my_new_directory`.
+3. We're going to move from development directory into the newly-created directory by typing
+`cd my_new_directory`. Our terminal should display `my_new_directory`.
 
-4. Let's create a new file named `README.md`. Type `touch README.md` into the terminal. In the file tree, if you expand the folder `my_new_directory`, you should now see your `README.md` file. Click on it to open it in the text editor.
+4. Let's create a new file named `README.md`. Type `touch README.md` into the terminal. In the
+file tree, if you expand the folder `my_new_directory`, you should now see your `README.md`
+file. Click on it to open it in the text editor.
 
 5. We can directly type in content here, but we can also use our terminal skills
 to add content. So, in the terminal, type `echo "This is my readme file" >
@@ -112,7 +120,7 @@ created earlier.
 
 To connect your local repository to the newly created GitHub repository, you
 must add a new remote to a remote name. Adding a remote involves giving `git` a "short name" and
-a "repository path". You copied the repository path from GitHub a few steps
+a "repository path." You copied the repository path from GitHub a few steps
 above.
 
 The repository path is a long bunch of technical words. The creators of Git
