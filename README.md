@@ -9,10 +9,10 @@
 
 ## Introduction
 
-You may have heard of [GitHub](https://github.com) before. In the previous 
+You may have heard of [GitHub](https://github.com) before. In the previous
 lesson, you used it to get Facebook's code for the React framework. For all
 the amazing power that GitHub provides (Microsoft thought it was so powerful
-that they bought GitHub for a cool $7.5 billion), as far as Git is concerned
+that they bought GitHub for a cool \$7.5 billion), as far as Git is concerned
 they're just a big old server that hosts a whole bunch of remote repositories
 ("remotes").
 
@@ -32,14 +32,14 @@ There are a few steps to follow to create a _remote_ repository on GitHub.
 1. Go to: [github.com/new](https://github.com/new), while logged into GitHub.
 
 2. Enter a name for your repository in the "Repository name" field. You can name
-it whatever you'd like; be creative! The default options are fine as-is — don't
-initialize the new repository with a `README` or add a `.gitignore` or license.
-Click the green 'Create repository' button.
+   it whatever you'd like; be creative! The default options are fine as-is — don't
+   initialize the new repository with a `README` or add a `.gitignore` or license.
+   Click the green 'Create repository' button.
 
 3. After you create the _remote_ repository, you should see a "Quick setup"
-page. Make sure the 'SSH' option is selected, then click the "Copy to clipboard" 
-symbol next to the repo URL (pictured) to copy the URL. (We'll use this in the 
-next section.)
+   page. Make sure the 'SSH' option is selected, then click the "Copy to clipboard"
+   symbol next to the repo URL (pictured) to copy the URL. (We'll use this in the
+   next section.)
 
 ![github repo quick setup](https://curriculum-content.s3.amazonaws.com/web-development/enough-git-for-learn-co/github_quick_setup.png)
 
@@ -53,68 +53,66 @@ local repository uploaded to GitHub. Follow the appropriate steps below:
 ### For the In-Browser Learn IDE
 
 1. On this Learn.co lesson page, click the 'Sandbox' button to open up a blank
-IDE.
+   IDE.
 
 2. First, we want to create a folder for our repository, which we'll call
-`my_new_directory`. In the terminal, type `mkdir my_new_directory`. The folder
-will appear in the tree on the left of the IDE. Alternatively, you can use the
-'Create New' button at the bottom of the IDE.
+   `my_new_directory`. In the terminal, type `mkdir my_new_directory`. The folder
+   will appear in the tree on the left of the IDE. Alternatively, you can use the
+   'Create New' button at the bottom of the IDE.
 
 3. To navigate into this new folder, type `cd my_new_directory`. Your terminal
-should display `my_new_directory`, indicating that you are now inside of the new
-folder.
+   should display `my_new_directory`, indicating that you are now inside of the new
+   folder.
 
 4. Next, we need to create a new file named `README.md`. In the terminal, type
-`touch README.md`. In the file tree, if you expand the folder
-`my_new_directory`, you should now see your `README.md` file. Click on it to
-open it in the text editor.
+   `touch README.md`. In the file tree, if you expand the folder
+   `my_new_directory`, you should now see your `README.md` file. Click on it to
+   open it in the text editor.
 
 5. We can directly type in content here, but we can also use our terminal skills
-to add content. So, in the terminal, type `echo "This is my readme file" >
-README.md`. If you've got the README file open, the new text will appear!
+   to add content. So, in the terminal, type `echo "This is my readme file" > README.md`. If you've got the README file open, the new text will appear!
 
 6. Now that we've got some basic content, we can initialize our local
-repository. In your terminal, type `git init`. Your terminal should show that an
-'empty Git repository' has been initialized.
+   repository. In your terminal, type `git init`. Your terminal should show that an
+   'empty Git repository' has been initialized.
 
 7. Type `git add README.md` to stage the new `README.md` file so it will be tracked by
-`git`.
+   `git`.
 
 8. Now, type `git commit -m "Initialize git"`. This will create the first commit
-for this local repository, which will allow us to push our work to the remote
-repository we created earlier.
+   for this local repository, which will allow us to push our work to the remote
+   repository we created earlier.
 
 ### For the Standalone Learn IDE
 
-1. We want to create a new directory and add a file so our first step is to change 
-into our `code` directory by typing `cd ~/code` into the terminal. (If your development 
-directory is named something other than `~/code`, that's fine, `cd` into whatever yours 
-is called.) Our terminal should display `code` (or whatever you decided to name your 
-development directory), indicating that you are now inside of our development directory.
+1. We want to create a new directory and add a file so our first step is to change
+   into our `code` directory by typing `cd ~/code` into the terminal. (If your development
+   directory is named something other than `~/code`, that's fine, `cd` into whatever yours
+   is called.) Our terminal should display `code` (or whatever you decided to name your
+   development directory), indicating that you are now inside of our development directory.
 
 2. Next, create a new directory named `my_new_directory` by entering `mkdir my_new_directory`
-in the terminal.
+   in the terminal.
 
 3. We're going to move from development directory into the newly-created directory by typing
-`cd my_new_directory`. Our terminal should display `my_new_directory`.
+   `cd my_new_directory`. Our terminal should display `my_new_directory`.
 
 4. Let's create a new file named `README.md`. Type `touch README.md` into the terminal. In the
-file tree, if you expand the folder `my_new_directory`, you should now see your `README.md`
-file. Click on it to open it in the text editor.
+   file tree, if you expand the folder `my_new_directory`, you should now see your `README.md`
+   file. Click on it to open it in the text editor.
 
 5. We can directly type in content here, but we can also use our terminal skills
-to add content. So, in the terminal, type `echo "This is my readme file" >
-README.md`. If you've got the README file open, the new text will appear!
+   to add content. So, in the terminal, type `echo "This is my readme file" > README.md`. If you've got the README file open, the new text will appear!
 
 6. Now that we've got some basic content, we can initialize our local
-repository. In your terminal, type `git init`. Our terminal should show that
-an 'empty Git repository' has been initialized.
+   repository. In your terminal, type `git init`. Our terminal should show that
+   an 'empty Git repository' has been initialized.
 
 7. Type `git add README.md` to stage the new `README.md` file so it will be tracked by Git.
 
 8. Now, type `git commit -m "Initialize git"`. This will create the first commit
-for this local repository, which will allow us to push our work to the remote we
-created earlier.
+   for this local repository, which will allow us to push our work to the remote we
+   created earlier.
 
 ## Set the Destination of a Repo with `git remote`
 
@@ -126,7 +124,7 @@ above.
 The repository path is a long bunch of technical words. The creators of Git
 thought it would be easier to type a "nickname" or a "short name" that points to
 that long repository path. It's common to have a "default" remote. The default
-remote short name is called `origin`. So we're going to create a new remote with a 
+remote short name is called `origin`. So we're going to create a new remote with a
 short name of `origin`.
 
 Make sure you still have your remote Git info copied from GitHub, and type the
@@ -136,7 +134,7 @@ following into the terminal:
 my_new_directory $ git remote add origin <your-copied-remote-repository-URL>
 ```
 
-This sets the remote so you can now ***push*** your code.
+This sets the remote so you can now **_push_** your code.
 
 You can use `git remote -v` (the `-v` is for "verbose") to view the remote(s).
 
@@ -160,8 +158,8 @@ repository name. You don't actually have to enter the repository name. Instead,
 you can just use `origin`. The second is the name of the remote branch you want
 to send code to. In the example below, we're pushing to our remote repository's
 _default_ branch, `master`. We're still going to hold off on discussing branching
-until later, but it's important to remember that `master` is a special branch, it's
-the default name.
+until later, but it's important to remember that `master` is special; it's
+the default branch.
 
 ```bash
 my_new_directory $ git push -u origin master
@@ -176,12 +174,10 @@ For every subsequent push, you only need to enter `git push`.
 ## Conclusion
 
 Being able to add Git remotes allows you to back up your local repository to a
-remote server. If you remember `git init`, 
-`git remote add origin your-remote-repository-URL`, add, and push your changes, 
+remote server. If you remember `git init`,
+`git remote add origin your-remote-repository-URL`, add, and push your changes,
 you'll be able to get your project up to GitHub in minutes!
 
 ## Resources
 
 - [GitHub guide on pushing](https://help.github.com/articles/pushing-to-a-remote/)
-
-
