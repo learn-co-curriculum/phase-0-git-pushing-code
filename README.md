@@ -48,71 +48,35 @@ Behind the scenes, GitHub has essentially `git init`'d a blank directory.
 ## Connect a Local Repository to a Remote Repository
 
 After you've created your _remote_ GitHub repository, you'll want to get your
-local repository uploaded to GitHub. Follow the appropriate steps below:
+local repository uploaded to GitHub. Follow the steps below:
 
-### For the In-Browser Learn IDE
-
-1. On this Learn.co lesson page, click the 'Sandbox' button to open up a blank
-   IDE.
-
-2. First, we want to create a folder for our repository, which we'll call
+1. First, we want to create a folder for our repository, which we'll call
    `my_new_directory`. In the terminal, type `mkdir my_new_directory`. The folder
    will appear in the tree on the left of the IDE. Alternatively, you can use the
    'Create New' button at the bottom of the IDE.
 
-3. To navigate into this new folder, type `cd my_new_directory`. Your terminal
+2. To navigate into this new folder, type `cd my_new_directory`. Your terminal
    should display `my_new_directory`, indicating that you are now inside of the new
    folder.
 
-4. Next, we need to create a new file named `README.md`. In the terminal, type
+3. Next, we need to create a new file named `README.md`. In the terminal, type
    `touch README.md`. In the file tree, if you expand the folder
    `my_new_directory`, you should now see your `README.md` file. Click on it to
    open it in the text editor.
 
-5. We can directly type in content here, but we can also use our terminal skills
+4. We can directly type in content here, but we can also use our terminal skills
    to add content. So, in the terminal, type `echo "This is my readme file" > README.md`. If you've got the README file open, the new text will appear!
 
-6. Now that we've got some basic content, we can initialize our local
+5. Now that we've got some basic content, we can initialize our local
    repository. In your terminal, type `git init`. Your terminal should show that an
    'empty Git repository' has been initialized.
 
-7. Type `git add README.md` to stage the new `README.md` file so it will be tracked by
+6. Type `git add README.md` to stage the new `README.md` file so it will be tracked by
    `git`.
 
-8. Now, type `git commit -m "Initialize git"`. This will create the first commit
+7. Now, type `git commit -m "Initialize git"`. This will create the first commit
    for this local repository, which will allow us to push our work to the remote
    repository we created earlier.
-
-### For the Standalone Learn IDE
-
-1. We want to create a new directory and add a file so our first step is to change
-   into our `code` directory by typing `cd ~/code` into the terminal. (If your development
-   directory is named something other than `~/code`, that's fine, `cd` into whatever yours
-   is called.) Our terminal should display `code` (or whatever you decided to name your
-   development directory), indicating that you are now inside of our development directory.
-
-2. Next, create a new directory named `my_new_directory` by entering `mkdir my_new_directory`
-   in the terminal.
-
-3. We're going to move from development directory into the newly-created directory by typing
-   `cd my_new_directory`. Our terminal should display `my_new_directory`.
-
-4. Let's create a new file named `README.md`. Type `touch README.md` into the terminal. In the
-   file tree, if you expand the folder `my_new_directory`, you should now see your `README.md`
-   file. Click on it to open it in the text editor.
-
-5. We can directly type in content here, but we can also use our terminal skills
-   to add content. So, in the terminal, type `echo "This is my readme file" > README.md`. If you've got the README file open, the new text will appear!
-
-6. Now that we've got some basic content, we can initialize our local
-   repository. In your terminal, type `git init`. Our terminal should show that
-   an 'empty Git repository' has been initialized.
-
-7. Type `git add README.md` to stage the new `README.md` file so it will be tracked by Git.
-
-8. Now, type `git commit -m "Initialize git"`. This will create the first commit
-   for this local repository, which will allow us to push our work to the remote we
-   created earlier.
 
 ## Set the Destination of a Repo with `git remote`
 
