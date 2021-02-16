@@ -158,7 +158,7 @@ option flag, `-a`, with the commit command:
 ```
 git commit -am "commit message"
 git push
-```a
+```
 
 ## Conclusion
 
