@@ -135,6 +135,31 @@ code up to a newly-added remote repository, use the `-u` flag to tell Git to
 
 For every subsequent push, you only need to enter `git push`.
 
+## An Aside and a Small Shortcut
+
+In this lesson, we've gone through the steps of both connecting a local repository,
+and pushing code up to GitHub. During this course, you'll be creating a few local
+repositories from scratch, but more often, you'll be cloning existing repositories
+to your local machine. In these situations, you won't need to use commands like
+`git init`, since the repo is already set up with Git and will already have a remote
+configured. However, you _will_ often need to add, commit and push work you've done
+locally to the remote repository. In these situations, you should be able to just run
+the following commands:
+
+```
+git add .
+git commit -m "commit message"
+git push
+```
+
+As a small shortcut, you can also combine adding and commiting by using an additional
+option flag, `-a`, with the commit command:
+
+```
+git commit -am "commit message"
+git push
+```a
+
 ## Conclusion
 
 Being able to add Git remotes allows you to back up your local repository to a
