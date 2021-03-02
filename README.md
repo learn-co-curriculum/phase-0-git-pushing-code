@@ -51,28 +51,29 @@ After you've created your _remote_ GitHub repository, you'll want to get your
 local repository uploaded to GitHub. Follow the steps below:
 
 1. First, we want to create a folder for our repository, which we'll call
-   `my_new_directory`. In the terminal, type `mkdir my_new_directory`. The folder
-   will appear in the tree on the left of the IDE. Alternatively, you can use the
-   'Create New' button at the bottom of the IDE.
+   `my_new_directory`. In the terminal, navigate to the `~/Development/code`
+   directory (or wherever you are storing your code) and type `mkdir
+   my_new_directory`.
 
 2. To navigate into this new folder, type `cd my_new_directory`. Your terminal
-   should display `my_new_directory`, indicating that you are now inside of the new
-   folder.
+   should display `my_new_directory`, indicating that you are now inside of the
+   new folder. Open the directory in VS Code by typing `code .`.
 
-3. Next, we need to create a new file named `README.md`. In the terminal, type
-   `touch README.md`. In the file tree, if you expand the folder
-   `my_new_directory`, you should now see your `README.md` file. Click on it to
-   open it in the text editor.
+3. Next, we need to create a new file named `README.md`. You can do this in the
+   terminal, by typing `touch README.md`, or in VS Code, by choosing `File ->
+   New File`.
 
-4. We can directly type in content here, but we can also use our terminal skills
-   to add content. So, in the terminal, type `echo "This is my readme file" > README.md`. If you've got the README file open, the new text will appear!
+4. We can directly type in content for our README file in VS Code, but we can
+   also use our terminal skills to add content. So, in the terminal, type `echo
+   "This is my readme file" > README.md`. If you've got the README file open in
+   VS Code, the new text will appear!
 
 5. Now that we've got some basic content, we can initialize our local
-   repository. In your terminal, type `git init`. Your terminal should show that an
-   'empty Git repository' has been initialized.
+   repository. In your terminal, type `git init`. Your terminal should show that
+   an 'empty Git repository' has been initialized.
 
-6. Type `git add README.md` to stage the new `README.md` file so it will be tracked by
-   `git`.
+6. Type `git add README.md` to stage the new `README.md` file so it will be
+   tracked by `git`.
 
 7. Now, type `git commit -m "Initialize git"`. This will create the first commit
    for this local repository, which will allow us to push our work to the remote
@@ -81,9 +82,9 @@ local repository uploaded to GitHub. Follow the steps below:
 ## Set the Destination of a Repo with `git remote`
 
 To connect your local repository to the newly created GitHub repository, you
-must add a new remote to a remote name. Adding a remote involves giving `git` a "short name" and
-a "repository path." You copied the repository path from GitHub a few steps
-above.
+must add a new remote to a remote name. Adding a remote involves giving `git` a
+"short name" and a "repository path." You copied the repository path from GitHub
+a few steps above.
 
 The repository path is a long bunch of technical words. The creators of Git
 thought it would be easier to type a "nickname" or a "short name" that points to
@@ -146,7 +147,7 @@ configured. However, you _will_ often need to add, commit and push work you've d
 locally to the remote repository. In these situations, you should be able to just run
 the following commands:
 
-```
+```bash
 git add .
 git commit -m "commit message"
 git push
@@ -155,7 +156,7 @@ git push
 As a small shortcut, you can also combine adding and commiting by using an additional
 option flag, `-a`, with the commit command:
 
-```
+```bash
 git commit -am "commit message"
 git push
 ```
