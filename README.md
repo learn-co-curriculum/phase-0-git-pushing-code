@@ -96,7 +96,7 @@ Make sure you still have your remote Git info copied from GitHub, and type the
 following into the terminal:
 
 ```bash
-my_new_directory $ git remote add origin your-copied-remote-repository-url
+git remote add origin your-copied-remote-repository-url
 ```
 
 This sets the remote so you can now **_push_** your code.
