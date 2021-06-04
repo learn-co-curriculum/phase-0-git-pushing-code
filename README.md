@@ -52,20 +52,17 @@ local repository uploaded to GitHub. Follow the steps below:
 
 1. First, we want to create a folder for our repository, which we'll call
    `my_new_directory`. In the terminal, navigate to the `~/Development/code`
-   directory (or wherever you are storing your code) and type `mkdir
-   my_new_directory`.
+   directory (or wherever you are storing your code) and type `mkdir my_new_directory`.
 
 2. To navigate into this new folder, type `cd my_new_directory`. Your terminal
    should display `my_new_directory`, indicating that you are now inside of the
    new folder. Open the directory in VS Code by typing `code .`.
 
 3. Next, we need to create a new file named `README.md`. You can do this in the
-   terminal, by typing `touch README.md`, or in VS Code, by choosing `File ->
-   New File`.
+   terminal, by typing `touch README.md`, or in VS Code, by choosing `File -> New File`.
 
 4. We can directly type in content for our README file in VS Code, but we can
-   also use our terminal skills to add content. So, in the terminal, type `echo
-   "This is my readme file" > README.md`. If you've got the README file open in
+   also use our terminal skills to add content. So, in the terminal, type `echo "This is my readme file" > README.md`. If you've got the README file open in
    VS Code, the new text will appear!
 
 5. Now that we've got some basic content, we can initialize our local
@@ -104,7 +101,7 @@ This sets the remote so you can now **_push_** your code.
 You can use `git remote -v` (the `-v` is for "verbose") to view the remote(s).
 
 ```bash
-my_new_directory $ git remote -v
+git remote -v
 # View existing remotes
 # origin  git@github.com:OWNER/REPOSITORY.git (fetch)
 # origin  git@github.com:OWNER/REPOSITORY.git (push)
@@ -122,12 +119,26 @@ repo. Remember, `origin` is just an alias or "short name" that refers to the
 repository name. You don't actually have to enter the repository name. Instead,
 you can just use `origin`. The second is the name of the remote branch you want
 to send code to. In the example below, we're pushing to our remote repository's
-_default_ branch, `master`. We're still going to hold off on discussing branching
-until later, but it's important to remember that `master` is special; it's
-the default branch.
+_default_ branch.
+
+Depending on your system configuration, your default branch's name might be
+either `main` or `master`. You can find out what the default branch for your
+current repository is by running:
+
+```sh
+git branch
+```
+
+This will output a list of all the branches for your repository. Whatever the
+branch listed in the terminal is will be your default branch (it should be
+either `master` or `main`). Take a note of the default branch name. To exit the
+branch view, hit `q` on your keyboard.
+
+Next, using the name of the default branch as the last variable, run this
+command:
 
 ```bash
-my_new_directory $ git push -u origin master
+git push -u origin main
 ```
 
 This will push your code up to the remote repo/branch. The first time you push
@@ -153,8 +164,8 @@ git commit -m "commit message"
 git push
 ```
 
-As a small shortcut, you can also combine adding and commiting by using an additional
-option flag, `-a`, with the commit command:
+As a small shortcut, you can also combine adding and committing by using an
+additional option flag, `-a`, with the commit command:
 
 ```bash
 git commit -am "commit message"
