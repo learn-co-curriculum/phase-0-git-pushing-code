@@ -126,16 +126,19 @@ either `main` or `master`. You can find out what the default branch for your
 current repository is by running:
 
 ```sh
-git branch
+git branch --show-current
 ```
 
-This will output a list of all the branches for your repository. Whatever the
-branch listed in the terminal is will be your default branch (it should be
-either `master` or `main`). Take a note of the default branch name. To exit the
-branch view, hit `q` on your keyboard.
+Whatever the branch listed in the terminal is will be your default branch (it
+should be either `master` or `main`).
 
-Next, using the name of the default branch as the last variable, run this
-command:
+If your default branch name is `master`, run:
+
+```bash
+git push -u origin master
+```
+
+Otherwise, if your default branch name is `main`, run:
 
 ```bash
 git push -u origin main
