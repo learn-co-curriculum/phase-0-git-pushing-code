@@ -16,14 +16,13 @@ that they bought GitHub for a cool $7.5 billion), as far as Git is concerned
 they're just a big old server that hosts a whole bunch of remote repositories
 ("remotes").
 
-You've seen how valuable
-_remotes_ are for _getting_ software. Now we can take a look at the other side
-of the transaction: how we mirror our _local_ repository to a _remote_ repository
-using `git push` and `git remote`.
+You've seen how valuable _remotes_ are for _getting_ software. Now we can take a
+look at the other side of the transaction: how we mirror our _local_ repository
+to a _remote_ repository using `git push` and `git remote`.
 
-Once your code is on a _remote_, it's backed up &mdash; which is always a good
-thing. Also, once you push to a remote, you can choose whether to let
-others `fork` or `clone` and benefit from it. Let's learn how to `push` our code!
+Once your code is on a _remote_, it's backed up — which is always a good
+thing. Also, once you push to a remote, you can choose whether to let others
+`fork` or `clone` and benefit from it. Let's learn how to `push` our code!
 
 ## Create a Remote Repository on GitHub
 
@@ -48,22 +47,25 @@ Behind the scenes, GitHub has essentially `git init`'d a blank directory.
 ## Connect a Local Repository to a Remote Repository
 
 After you've created your _remote_ GitHub repository, you'll want to get your
-local repository uploaded to GitHub. Follow the steps below:
+_local_ repository uploaded to GitHub. Follow the steps below:
 
 1. First, we want to create a folder for our repository, which we'll call
    `my_new_directory`. In the terminal, navigate to the `~/Development/code`
-   directory (or wherever you are storing your code) and type `mkdir my_new_directory`.
+   directory (or wherever you are storing your code) and type
+   `mkdir my_new_directory`.
 
 2. To navigate into this new folder, type `cd my_new_directory`. Your terminal
    should display `my_new_directory`, indicating that you are now inside of the
    new folder. Open the directory in VS Code by typing `code .`.
 
 3. Next, we need to create a new file named `README.md`. You can do this in the
-   terminal, by typing `touch README.md`, or in VS Code, by choosing `File -> New File`.
+   terminal, by typing `touch README.md`, or in VS Code, by choosing
+   `File -> New File`.
 
 4. We can directly type in content for our README file in VS Code, but we can
-   also use our terminal skills to add content. So, in the terminal, type `echo "This is my readme file" > README.md`. If you've got the README file open in
-   VS Code, the new text will appear!
+   also use our terminal skills to add content. So, in the terminal, type
+   `echo "This is my readme file" > README.md`. If you've got the README file
+   open in VS Code, the new text will appear!
 
 5. Now that we've got some basic content, we can initialize our local
    repository. In your terminal, type `git init`. Your terminal should show that
@@ -132,13 +134,15 @@ git branch --show-current
 Whatever the branch listed in the terminal is will be your default branch (it
 should be either `master` or `main`).
 
-If your default branch name is `master`, run:
+If your default branch name is `master`, run this command to push your code up
+to GitHub:
 
 ```bash
 git push -u origin master
 ```
 
-Otherwise, if your default branch name is `main`, run:
+**Otherwise**, if your default branch name is `main`, run this command to push
+your code up to GitHub:
 
 ```bash
 git push -u origin main
@@ -146,7 +150,8 @@ git push -u origin main
 
 This will push your code up to the remote repo/branch. The first time you push
 code up to a newly-added remote repository, use the `-u` flag to tell Git to
-"save" the remote repository as the default push destination.
+"save" the remote repository as the default push destination for your current
+branch.
 
 For every subsequent push, you only need to enter `git push`.
 
@@ -167,13 +172,17 @@ git commit -m "commit message"
 git push
 ```
 
-As a small shortcut, you can also combine adding and committing by using an
-additional option flag, `-a`, with the commit command:
+As a small shortcut, you can also combine adding all tracked files and
+committing by using an additional option flag, `-a`, with the commit command:
 
 ```bash
 git commit -am "commit message"
 git push
 ```
+
+Note that the `-am` flags will work for adding and committing changes to
+existing tracked files, but if you need to create a new file as part of any
+lesson, you'll need to use `git add` to track that file before committing.
 
 ## Conclusion
 
