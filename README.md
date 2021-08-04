@@ -95,7 +95,7 @@ Make sure you still have your remote Git info copied from GitHub, and type the
 following into the terminal:
 
 ```bash
-git remote add origin your-copied-remote-repository-url
+$ git remote add origin your-copied-remote-repository-url
 ```
 
 This sets the remote so you can now **_push_** your code.
@@ -103,10 +103,10 @@ This sets the remote so you can now **_push_** your code.
 You can use `git remote -v` (the `-v` is for "verbose") to view the remote(s).
 
 ```bash
-git remote -v
-# View existing remotes
-# origin  git@github.com:OWNER/REPOSITORY.git (fetch)
-# origin  git@github.com:OWNER/REPOSITORY.git (push)
+$ git remote -v
+View existing remotes
+origin  git@github.com:OWNER/REPOSITORY.git (fetch)
+origin  git@github.com:OWNER/REPOSITORY.git (push)
 ```
 
 ## Send Code to the Remote Repo with `git push`
@@ -128,7 +128,7 @@ either `main` or `master`. You can find out what the default branch for your
 current repository is by running:
 
 ```sh
-git branch --show-current
+$ git branch --show-current
 ```
 
 Whatever the branch listed in the terminal is will be your default branch (it
@@ -138,14 +138,14 @@ If your default branch name is `master`, run this command to push your code up
 to GitHub:
 
 ```bash
-git push -u origin master
+$ git push -u origin master
 ```
 
 **Otherwise**, if your default branch name is `main`, run this command to push
 your code up to GitHub:
 
 ```bash
-git push -u origin main
+$ git push -u origin main
 ```
 
 This will push your code up to the remote repo/branch. The first time you push
@@ -167,17 +167,17 @@ locally to the remote repository. In these situations, you should be able to jus
 the following commands:
 
 ```bash
-git add .
-git commit -m "commit message"
-git push
+$ git add .
+$ git commit -m "commit message"
+$ git push
 ```
 
 As a small shortcut, you can also combine adding all tracked files and
 committing by using an additional option flag, `-a`, with the commit command:
 
 ```bash
-git commit -am "commit message"
-git push
+$ git commit -am "commit message"
+$ git push
 ```
 
 Note that the `-am` flags will work for adding and committing changes to
