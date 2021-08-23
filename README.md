@@ -94,7 +94,7 @@ short name of `origin`.
 Make sure you still have your remote Git info copied from GitHub, and type the
 following into the terminal:
 
-```bash
+```console
 $ git remote add origin your-copied-remote-repository-url
 ```
 
@@ -102,7 +102,7 @@ This sets the remote so you can now **_push_** your code.
 
 You can use `git remote -v` (the `-v` is for "verbose") to view the remote(s).
 
-```bash
+```console
 $ git remote -v
 View existing remotes
 origin  git@github.com:OWNER/REPOSITORY.git (fetch)
@@ -137,14 +137,14 @@ should be either `master` or `main`).
 If your default branch name is `master`, run this command to push your code up
 to GitHub:
 
-```bash
+```console
 $ git push -u origin master
 ```
 
 **Otherwise**, if your default branch name is `main`, run this command to push
 your code up to GitHub:
 
-```bash
+```console
 $ git push -u origin main
 ```
 
@@ -166,7 +166,7 @@ configured. However, you _will_ often need to add, commit and push work you've d
 locally to the remote repository. In these situations, you should be able to just run
 the following commands:
 
-```bash
+```console
 $ git add .
 $ git commit -m "commit message"
 $ git push
@@ -175,7 +175,7 @@ $ git push
 As a small shortcut, you can also combine adding all tracked files and
 committing by using an additional option flag, `-a`, with the commit command:
 
-```bash
+```console
 $ git commit -am "commit message"
 $ git push
 ```
