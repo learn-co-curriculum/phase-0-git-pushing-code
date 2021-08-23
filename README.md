@@ -127,7 +127,7 @@ Depending on your system configuration, your default branch's name might be
 either `main` or `master`. You can find out what the default branch for your
 current repository is by running:
 
-```sh
+```console
 $ git branch --show-current
 ```
 
