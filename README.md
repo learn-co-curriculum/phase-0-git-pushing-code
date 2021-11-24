@@ -157,14 +157,17 @@ For every subsequent push, you only need to enter `git push`.
 
 ## An Aside and a Small Shortcut
 
-In this lesson, we've gone through the steps of both connecting a local repository,
-and pushing code up to GitHub. During this course, you'll be creating a few local
-repositories from scratch, but more often, you'll be cloning existing repositories
-to your local machine. In these situations, you won't need to use commands like
-`git init`, since the repo is already set up with Git and will already have a remote
-configured. However, you _will_ often need to add, commit and push work you've done
-locally to the remote repository. In these situations, you should be able to just run
-the following commands:
+In this lesson, we've gone through the steps of both connecting a local
+repository, and pushing code up to GitHub. During this course, you'll be
+creating a few local repositories from scratch, but more often, you'll be
+cloning existing repositories to your local machine. In these situations, you
+won't need to use commands like `git init`, since the repo is already set up
+with Git and will already have a remote configured.
+
+However, you _will_ often need to add, commit and push work you've done locally
+to the remote repository. Luckily, the `learn test` command will accomplish all
+of this for you. To do the process by hand, however, you would run the following
+commands:
 
 ```console
 $ git add .
@@ -172,7 +175,7 @@ $ git commit -m "commit message"
 $ git push
 ```
 
-As a small shortcut, you can also combine adding all tracked files and
+As a small shortcut, you can also combine adding all **tracked** files and
 committing by using an additional option flag, `-a`, with the commit command:
 
 ```console
@@ -180,16 +183,24 @@ $ git commit -am "commit message"
 $ git push
 ```
 
-Note that the `-am` flags will work for adding and committing changes to
-existing tracked files, but if you need to create a new file as part of any
-lesson, you'll need to use `git add` to track that file before committing.
+Note that the `-am` flags will work for adding and committing changes to files
+that are **already being tracked**, but if you need to create a new file as part
+of any lesson, you'll need to use `git add` to track that file before you can
+commit it.
 
 ## Conclusion
 
 Being able to add Git remotes allows you to back up your local repository to a
-remote server. If you remember `git init`,
-`git remote add origin your-remote-repository-URL`, add, and push your changes,
-you'll be able to get your project up to GitHub in minutes!
+remote server. To review, the process is:
+
+- run `git init` to start tracking your local repo
+- run `git remote add origin your-remote-repository-URL` to tie your local repo
+  to the remote repo on GitHub
+- use `git add` and `git commit` to save your changes
+- use `git push` to push the changes up to the remote repo
+
+With these few steps, you'll be able to get your project up to GitHub in
+minutes!
 
 ## Resources
 
