@@ -88,8 +88,8 @@ a few steps above.
 The repository path is a long bunch of technical words. The creators of Git
 thought it would be easier to type a "nickname" or a "short name" that points to
 that long repository path. It's common to have a "default" remote. The default
-remote short name is called `origin`. So we're going to create a new remote with a
-short name of `origin`.
+remote short name is called `origin`. So we're going to create a new remote with
+a short name of `origin`.
 
 Make sure you still have your remote Git info copied from GitHub, and type the
 following into the terminal:
@@ -132,20 +132,20 @@ $ git branch --show-current
 ```
 
 Whatever the branch listed in the terminal is will be your default branch (it
-should be either `master` or `main`).
+should be either `main` or `master`).
 
-If your default branch name is `master`, run this command to push your code up
+If your default branch name is `main`, run this command to push your code up
 to GitHub:
 
 ```console
-$ git push -u origin master
+$ git push -u origin main
 ```
 
-**Otherwise**, if your default branch name is `main`, run this command to push
+**Otherwise**, if your default branch name is `master`, run this command to push
 your code up to GitHub:
 
 ```console
-$ git push -u origin main
+$ git push -u origin master
 ```
 
 This will push your code up to the remote repo/branch. The first time you push
@@ -157,14 +157,14 @@ For every subsequent push, you only need to enter `git push`.
 
 ## An Aside and a Small Shortcut
 
-In this lesson, we've gone through the steps of both connecting a local repository,
-and pushing code up to GitHub. During this course, you'll be creating a few local
-repositories from scratch, but more often, you'll be cloning existing repositories
-to your local machine. In these situations, you won't need to use commands like
-`git init`, since the repo is already set up with Git and will already have a remote
-configured. However, you _will_ often need to add, commit and push work you've done
-locally to the remote repository. In these situations, you should be able to just run
-the following commands:
+In this lesson, we've gone through the steps of both connecting a local
+repository, and pushing code up to GitHub. During this course, you'll be
+creating a few local repositories from scratch, but more often, you'll be
+cloning existing repositories to your local machine. In these situations, you
+won't need to use commands like `git init`, since the repo is already set up
+with Git and will already have a remote configured. However, you _will_ often
+need to add, commit and push work you've done locally to the remote repository.
+In these situations, you should be able to just run the following commands:
 
 ```console
 $ git add .
