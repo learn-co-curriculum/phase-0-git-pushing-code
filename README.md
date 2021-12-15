@@ -140,7 +140,7 @@ $ git branch --show-current
 Then, to push your code up to GitHub, run this command:
 
 ```console
-$ git push -u origin main
+$ git push -u origin master
 ```
 
 The first time you push code up to a newly-added remote repository, using the
