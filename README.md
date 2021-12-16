@@ -10,8 +10,8 @@
 ## Introduction
 
 You've seen how valuable _remotes_ are for _getting_ software. Now we can take a
-look at the other side of the transaction: how we mirror our _local_ repository
-to a _remote_ repository using `git remote` and `git push`.
+look at the other side of the transaction: how we synchronize our _local_
+repository to a _remote_ repository using `git remote` and `git push`.
 
 Once your code is on a _remote_, it's backed up — which is always a good
 thing. Also, once you push to a remote, you can choose whether to let others
@@ -140,7 +140,7 @@ $ git branch --show-current
 Then, to push your code up to GitHub, run this command:
 
 ```console
-$ git push -u origin master
+$ git push -u origin main
 ```
 
 The first time you push code up to a newly-added remote repository, using the
