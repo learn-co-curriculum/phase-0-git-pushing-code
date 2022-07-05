@@ -130,8 +130,9 @@ you can just use `origin`. The second argument is the name of the remote
 **branch** you want to send code to. We're going to push to our remote
 repository's **default branch**.
 
-If you configured Git using the instructions given earlier in the prework, your
-default branch's name will be `main`. You can verify this by running:
+If you configured Git using the instructions given earlier in Software
+Engineering Prep, your default branch's name will be `main`. You can verify this
+by running:
 
 ```console
 $ git branch --show-current
