@@ -15,14 +15,11 @@ repository to a _remote_ repository using `git remote` and `git push`.
 
 Once your code is on a _remote_, it's backed up — which is always a good
 thing. Also, once you push to a remote, you can choose whether to let others
-`fork` or `clone` and benefit from it. Let's learn how to `push` our code!
+`fork` or `clone` and benefit from it.
 
-> **Note**: the workflow you've been using for labs also pushes code for you! When
-> you run `learn test`, the `learn-co` gem automatically creates an `fis-wip`
-> **branch**, saves the changes you've made to that branch, and pushes it up to
-> your copy of the repo on GitHub. Once you have all the tests passing, the lab
-> is registered as complete on Canvas _and_ you have a backup of your code saved
-> on GitHub.
+You're already quite familiar with using the `git push` command to push your
+work on labs up to GitHub so you can submit it using CodeGrade. But what happens
+when you need to push up work that doesn't already exist on GitHub?
 
 In this lesson, we'll learn how we can set up remote repositories on GitHub for
 any projects we work on. Specifically, we'll learn how to get a new repo set up
@@ -34,9 +31,9 @@ remote repositories, and push our code up to the remote repo on GitHub.
 Let's review the process for creating a local repository:
 
 1. First, we want to create a folder for our repository, which we'll call
-   `my_new_directory`. In the terminal, navigate to the `~/Development/code`
-   directory (or wherever you are storing your code for the course) and type
-   `mkdir my_new_directory`.
+   `my_new_directory`. In the terminal, navigate to the
+   `~/Development/code/se-prep` directory (or wherever you are storing your code
+   for the course) and type `mkdir my_new_directory`.
 
 2. To navigate into this new folder, type `cd my_new_directory`. Your terminal
    should display `my_new_directory`, indicating that you are now inside of the
@@ -125,7 +122,7 @@ remote repository.
 
 The `git push` command takes two arguments. The first is the name of the remote
 repo. Remember, `origin` is just an alias or "short name" that refers to the
-repository name. You don't actually have to enter the repository name. Instead,
+repository's URL. You don't actually have to enter the repository URL. Instead,
 you can just use `origin`. The second argument is the name of the remote
 **branch** you want to send code to. We're going to push to our remote
 repository's **default branch**.
@@ -148,40 +145,6 @@ The first time you push code up to a newly-added remote repository, using the
 `-u` flag will tell Git to "save" the remote repository as the default push
 destination for your current branch. What this means is that, for every
 subsequent push from the `main` branch, you will only need to run `git push`.
-
-## An Aside and a Small Shortcut
-
-In this lesson, we've gone through the steps of both connecting a local
-repository, and pushing code up to GitHub. During this course, you'll be
-creating a few local repositories from scratch, but more often, you'll be
-cloning existing repositories to your local machine. In these situations, you
-won't need to use commands like `git init`, since the repo is already set up
-with Git and will already have a remote configured.
-
-However, you _will_ often need to add, commit and push work you've done locally
-to the remote repository. The `learn test` command will do this for you for
-labs, but for anything else you're working on — for example, the projects you'll
-do at the end of each phase — you'll need to do the process by hand:
-
-```console
-$ git add .
-$ git commit -m "commit message"
-$ git push
-```
-
-Recall from earlier in this section that you can combine adding all **tracked**
-files and committing by using an additional option flag, `-a`, with the commit
-command:
-
-```console
-$ git commit -am "commit message"
-$ git push
-```
-
-Note that the `-am` flags will work for adding and committing changes to files
-that are **already being tracked**, but if you need to create a new file as part
-of any lesson, you'll need to use `git add` to track that file before you can
-commit it.
 
 ## Conclusion
 
